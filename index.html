@@ -1,0 +1,1517 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#030712">
+<meta name="description" content="MR WiFi — Ultra-low latency gaming fiber internet, CCTV and LAN networking solutions in Dhaka, Bangladesh.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://mrwifi.online/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mrwifi.online/">
+<meta property="og:title" content="MR WiFi | Stay Connected, Stay Ahead">
+<meta property="og:description" content="High-speed fiber internet, ultra-low latency gaming, and professional network solutions.">
+<title>MR WiFi — Stay Connected, Stay Ahead</title>
+<link rel="icon" type="image/png" href="logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "InternetServiceProvider",
+  "name": "MR WiFi",
+  "url": "https://mrwifi.online/",
+  "telephone": "+8801410024365",
+  "email": "support@mrwifi.online",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "House: 331, Road: 22, New D.O.H.S Mohakhali",
+    "addressLocality": "Dhaka",
+    "postalCode": "1212",
+    "addressCountry": "BD"
+  }
+}
+</script>
+
+<style>
+:root {
+  --bg: #030712;
+  --panel: #080f21;
+  --panel2: #0c1630;
+  --line: rgba(56, 189, 248, 0.16);
+  --blue: #007bff;
+  --cyan: #38bdf8;
+  --orange: #ff7a00;
+  --mint: #10b981;
+  --white: #f8fafc;
+  --muted: #94a3b8;
+  --max: 1180px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--white);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .speed, .brand-text {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+/* Luxury Mesh Background */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(circle at 82% 8%, rgba(0, 123, 255, 0.18), transparent 40%),
+    radial-gradient(circle at 12% 45%, rgba(255, 122, 0, 0.11), transparent 38%),
+    radial-gradient(circle at 50% 92%, rgba(56, 189, 248, 0.12), transparent 45%),
+    linear-gradient(180deg, #030712 0%, #050b1c 50%, #030712 100%);
+}
+
+a { color: inherit; text-decoration: none; }
+.wrap { width: min(var(--max), calc(100% - 34px)); margin: auto; }
+
+/* Scroll Progress Bar */
+.scroll-progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--blue), var(--cyan), var(--orange));
+  z-index: 100;
+  box-shadow: 0 0 12px rgba(255, 122, 0, 0.7);
+  transition: width 0.08s linear;
+}
+
+/* SMART FLOATING ISLAND HEADER (Auto-Hides on Scroll Down, Appears on Scroll Up) */
+.header-outer {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  padding: 14px 16px 0;
+  transition: transform 0.38s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.3s ease;
+}
+.header-outer.nav-hidden {
+  transform: translateY(-115%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.header-island {
+  max-width: var(--max);
+  margin: auto;
+  background: rgba(8, 15, 33, 0.72);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 18px;
+  padding: 10px 18px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+.header-outer.scrolled .header-island {
+  background: rgba(6, 12, 26, 0.88);
+  border-color: rgba(56, 189, 248, 0.25);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65);
+}
+
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 11px; font-weight: 800; font-size: 21px; letter-spacing: -0.6px; }
+
+/* Custom High-End Vector + Image Logo Mark */
+.brand-logo-wrap {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #0b1938, #060e20);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.35);
+  overflow: hidden;
+  flex-shrink: 0;
+  position: relative;
+}
+.brand-logo-wrap img {
+  width: 100%; height: 100%; object-fit: cover; border-radius: 11px;
+  position: relative; z-index: 2;
+}
+.brand-text span { color: var(--orange); }
+
+.navlinks { display: flex; align-items: center; gap: 22px; color: #cbd5e1; font-size: 13.5px; font-weight: 600; }
+.navlinks a { position: relative; transition: color 0.2s; padding: 5px 2px; }
+.navlinks a::after {
+  content: "";
+  position: absolute;
+  bottom: 0; left: 50%; width: 0; height: 2px;
+  background: linear-gradient(90deg, var(--cyan), var(--orange));
+  transition: width 0.25s ease, left 0.25s ease;
+}
+.navlinks a:hover { color: #fff; }
+.navlinks a:hover::after { width: 100%; left: 0; }
+
+/* Buttons with Shimmer Effect */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 13.5px;
+  background: linear-gradient(110deg, #0062ff, #009dff);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 8px 25px rgba(0, 115, 255, 0.35);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.22s, box-shadow 0.22s;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0; left: -100%;
+  width: 60%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.28), transparent);
+  transform: skewX(-25deg);
+  transition: left 0.55s ease;
+}
+.btn:hover::after { left: 140%; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0, 123, 255, 0.55); }
+
+.btn.orange {
+  background: linear-gradient(110deg, #ff6200, #ff9100);
+  box-shadow: 0 8px 25px rgba(255, 122, 0, 0.35);
+}
+.btn.orange:hover { box-shadow: 0 12px 32px rgba(255, 122, 0, 0.55); }
+
+.btn.outline {
+  background: rgba(12, 22, 48, 0.75);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  color: #f1f5f9;
+  box-shadow: none;
+}
+.btn.outline:hover { border-color: var(--cyan); background: rgba(0, 123, 255, 0.16); }
+
+.btn.mint {
+  background: linear-gradient(110deg, #059669, #10b981);
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
+}
+
+.menu {
+  display: none;
+  background: rgba(15, 28, 58, 0.9);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: white;
+  border-radius: 11px;
+  padding: 8px 12px;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-wrapper { position: relative; overflow: hidden; }
+#fiberCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  padding: 64px 0 82px;
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  align-items: center;
+  gap: 38px;
+  min-height: 590px;
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  background: rgba(0, 123, 255, 0.1);
+  padding: 6px 13px;
+  border-radius: 99px;
+  color: #7dd3fc;
+  font-size: 10.5px;
+  letter-spacing: 1.6px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.kicker.orange {
+  border-color: rgba(255, 122, 0, 0.4);
+  background: rgba(255, 122, 0, 0.12);
+  color: #fdba74;
+}
+
+.pulse {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--orange);
+  box-shadow: 0 0 0 5px rgba(255, 122, 0, 0.25);
+  animation: pulse 2s infinite;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 5.8vw, 70px);
+  line-height: 1.05;
+  letter-spacing: -2.5px;
+  margin: 18px 0 16px;
+  font-weight: 800;
+}
+.gradient {
+  background: linear-gradient(95deg, #38bdf8 0%, #007bff 48%, #ff8c00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero-copy { max-width: 550px; color: #94a3b8; font-size: 16px; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+
+/* Live Trust Metrics Bar */
+.metrics-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 32px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.metric-item strong {
+  display: block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #fff;
+}
+.metric-item span { font-size: 11.5px; color: #94a3b8; font-weight: 600; }
+
+/* 3D Holographic Visual Core */
+.visual { height: 420px; position: relative; display: grid; place-items: center; isolation: isolate; }
+.visual::before {
+  content: "";
+  position: absolute;
+  width: 310px; height: 310px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 123, 255, 0.35), rgba(255, 122, 0, 0.2));
+  filter: blur(70px);
+  z-index: -1;
+  animation: breathe 5s ease-in-out infinite;
+}
+.core {
+  width: 210px; height: 210px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: relative;
+  background: radial-gradient(circle at 30% 30%, #ffffff, #e2e8f0);
+  padding: 6px;
+  border: 3px solid rgba(56, 189, 248, 0.7);
+  box-shadow: 0 0 60px rgba(0, 123, 255, 0.45), 0 0 30px rgba(255, 122, 0, 0.35);
+  animation: float 4.5s ease-in-out infinite;
+}
+.core img { width: 100%; height: 100%; object-fit: contain; border-radius: 50%; position: relative; z-index: 2; }
+.core::before, .core::after {
+  content: "";
+  position: absolute;
+  inset: -24px;
+  border: 1.5px dashed rgba(56, 189, 248, 0.55);
+  border-radius: 50%;
+  animation: spin 16s linear infinite;
+}
+.core::after {
+  inset: -50px;
+  border: 1px solid rgba(255, 122, 0, 0.45);
+  animation-direction: reverse;
+  animation-duration: 24s;
+}
+.orbit {
+  position: absolute;
+  width: 360px; height: 160px;
+  border: 1px solid rgba(0, 123, 255, 0.45);
+  border-radius: 50%;
+  transform: rotate(-26deg);
+  animation: orbit 18s linear infinite;
+}
+.orbit.o2 {
+  width: 410px; height: 190px;
+  transform: rotate(34deg);
+  border-color: rgba(255, 122, 0, 0.4);
+  animation-direction: reverse;
+  animation-duration: 24s;
+}
+.floating-badge {
+  position: absolute;
+  background: rgba(8, 15, 33, 0.88);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  backdrop-filter: blur(10px);
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #f1f5f9;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: float 3.8s ease-in-out infinite;
+  z-index: 5;
+}
+.fb1 { top: 10%; left: 2%; animation-delay: 0.4s; }
+.fb2 { bottom: 14%; right: 0%; border-color: rgba(255, 122, 0, 0.5); animation-delay: 1.2s; }
+.fb-dot { width: 8px; height: 8px; border-radius: 50%; background: #10b981; box-shadow: 0 0 10px #10b981; }
+.fb2 .fb-dot { background: var(--orange); box-shadow: 0 0 10px var(--orange); }
+
+/* Sections */
+.section { padding: 76px 0; }
+.section-head { text-align: center; max-width: 700px; margin: 0 auto 38px; }
+.section-head .kicker { margin-bottom: 12px; }
+.section-head h2 { font-size: clamp(30px, 4.3vw, 46px); line-height: 1.12; letter-spacing: -1.6px; margin: 8px 0 12px; font-weight: 800; }
+.section-head p { color: var(--muted); margin: 0; font-size: 15.5px; }
+
+/* Smart Speed Finder Bar */
+.calculator-box {
+  background: linear-gradient(135deg, rgba(12, 22, 48, 0.9), rgba(8, 15, 33, 0.95));
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 18px;
+  padding: 22px 26px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.4);
+}
+.calc-controls { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; flex: 1; }
+.calc-item { flex: 1; min-width: 210px; }
+.calc-item label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 1.1px; color: #94a3b8; font-weight: 800; margin-bottom: 6px; }
+.calc-item select {
+  width: 100%;
+  background: #040917;
+  color: #fff;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 13.5px;
+  outline: none;
+  cursor: pointer;
+}
+.calc-result {
+  background: linear-gradient(120deg, rgba(0, 123, 255, 0.14), rgba(255, 122, 0, 0.1));
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  padding: 14px 20px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.calc-result span { font-size: 11.5px; color: #7dd3fc; display: block; font-weight: 600; }
+.calc-result strong { font-size: 17px; color: #fff; font-family: 'Space Grotesk', sans-serif; }
+
+/* Package Filter Tabs */
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 28px;
+}
+.tab-btn {
+  background: rgba(8, 15, 33, 0.85);
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  color: #cbd5e1;
+  padding: 9px 18px;
+  border-radius: 99px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.22s;
+}
+.tab-btn:hover { border-color: var(--cyan); color: #fff; }
+.tab-btn.active {
+  background: linear-gradient(105deg, var(--blue), #00a2ff);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.45);
+}
+
+/* Packages Grid with Spotlight & 3D Tilt */
+.packages { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.pkg {
+  position: relative;
+  padding: 26px;
+  background: linear-gradient(155deg, rgba(12, 22, 48, 0.92), rgba(6, 12, 26, 0.96));
+  border: 1px solid rgba(56, 189, 248, 0.18);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+}
+.pkg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(380px circle at var(--mouse-x) var(--mouse-y), rgba(56, 189, 248, 0.16), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.pkg:hover::after { opacity: 1; }
+.pkg:hover { transform: translateY(-6px); border-color: #38bdf8; box-shadow: 0 18px 45px rgba(0, 123, 255, 0.22); }
+
+.pkg.popular {
+  border: 1.5px solid var(--orange);
+  box-shadow: 0 14px 45px rgba(255, 122, 0, 0.18);
+}
+.pkg.gamer { border-color: rgba(56, 189, 248, 0.45); }
+
+.popular-tag {
+  position: absolute;
+  right: 16px; top: 16px;
+  font-size: 9.5px;
+  letter-spacing: 1px;
+  color: #fff;
+  background: linear-gradient(90deg, #ff6200, #ff9500);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 800;
+  box-shadow: 0 4px 14px rgba(255, 122, 0, 0.45);
+}
+.gamer-tag {
+  position: absolute;
+  right: 16px; top: 16px;
+  font-size: 9.5px;
+  letter-spacing: 1px;
+  color: #030712;
+  background: #38bdf8;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 800;
+}
+
+.plan-name {
+  font-size: 15px;
+  font-weight: 800;
+  color: #7dd3fc;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.pkg.popular .plan-name { color: #fb923c; }
+.speed { font-size: 42px; font-weight: 800; letter-spacing: -2px; margin: 8px 0 2px; line-height: 1; }
+.speed small { font-size: 14px; letter-spacing: 0; color: #94a3b8; font-weight: 700; }
+.price { font-size: 24px; font-weight: 800; margin: 6px 0 14px; color: #ffffff; }
+.price small { font-size: 12px; color: #94a3b8; font-weight: 500; }
+.pkg-specs { list-style: none; padding: 0; margin: 0 0 18px; font-size: 13px; color: #cbd5e1; display: grid; gap: 7px; }
+.pkg-specs li::before { content: "✦ "; color: var(--orange); font-weight: bold; }
+.pkg .btn { width: 100%; padding: 11px; position: relative; z-index: 2; }
+.disclaimer { text-align: center; color: #64748b; font-size: 12px; margin-top: 22px; }
+
+/* Gaming & Low Latency Banner */
+.gaming-banner {
+  position: relative;
+  border-radius: 22px;
+  padding: 42px;
+  background: linear-gradient(130deg, #091633 0%, #050b1c 55%, #1c1008 100%);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  box-shadow: 0 24px 65px rgba(0, 0, 0, 0.55);
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 34px;
+  align-items: center;
+  overflow: hidden;
+}
+.gaming-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 22px 0 26px;
+}
+.g-feat {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 13px 15px;
+  border-radius: 12px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #f1f5f9;
+}
+.g-feat span { display: block; font-size: 11.5px; color: #94a3b8; font-weight: 500; margin-top: 3px; }
+
+.ping-card {
+  background: rgba(3, 7, 18, 0.88);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 18px;
+  padding: 24px;
+}
+.ping-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #7dd3fc;
+  margin-bottom: 18px;
+}
+.live-pill {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  padding: 3px 9px;
+  border-radius: 99px;
+  font-size: 10px;
+}
+.ping-row { margin-bottom: 15px; }
+.ping-row:last-child { margin-bottom: 0; }
+.ping-meta { display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+.ping-meta b { color: #38bdf8; font-family: monospace; font-size: 14px; }
+.ping-row.orange .ping-meta b { color: var(--orange); }
+.ping-bar { height: 7px; background: #0f1f40; border-radius: 99px; overflow: hidden; }
+.ping-fill { height: 100%; border-radius: 99px; background: linear-gradient(90deg, var(--blue), #38bdf8); }
+.ping-row.orange .ping-fill { background: linear-gradient(90deg, #ff6200, #ffb700); }
+
+/* Features & Services */
+.feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.feature {
+  padding: 26px;
+  background: rgba(8, 15, 33, 0.85);
+  border: 1px solid rgba(56, 189, 248, 0.16);
+  border-radius: 16px;
+  transition: transform 0.25s, border-color 0.25s;
+}
+.feature:hover { transform: translateY(-4px); border-color: var(--cyan); }
+.feature-icon {
+  width: 48px; height: 48px;
+  display: grid; place-items: center;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  background: rgba(0, 123, 255, 0.12);
+  border-radius: 12px;
+  color: #38bdf8;
+  font-size: 22px;
+}
+.feature h3 { margin: 16px 0 6px; font-size: 18px; }
+.feature p { margin: 0; color: #94a3b8; font-size: 13.5px; }
+
+.service-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.service {
+  padding: 28px;
+  background: linear-gradient(145deg, rgba(12, 22, 48, 0.9), rgba(6, 12, 26, 0.95));
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 18px;
+  transition: transform 0.25s, border-color 0.25s;
+}
+.service:hover { transform: translateY(-4px); border-color: var(--orange); }
+.service .feature-icon {
+  border-color: rgba(255, 122, 0, 0.4);
+  background: rgba(255, 122, 0, 0.12);
+  color: var(--orange);
+}
+.service h3 { margin: 16px 0 8px; }
+.service p, .service li { color: #cbd5e1; font-size: 13.5px; }
+.service ul { padding-left: 18px; margin-bottom: 18px; }
+.service li { margin: 6px 0; }
+
+/* Coverage */
+.coverage {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 35px;
+  padding: 36px;
+  background: linear-gradient(125deg, rgba(12, 22, 48, 0.92), rgba(6, 12, 26, 0.96));
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 20px;
+}
+.coverage h2 { font-size: 36px; letter-spacing: -1.5px; line-height: 1.12; margin: 12px 0; }
+.coverage p { color: #94a3b8; }
+.area-search {
+  width: 100%;
+  max-width: 380px;
+  padding: 11px 15px;
+  margin-top: 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  background: #040917;
+  color: #fff;
+  font-size: 13.5px;
+  outline: none;
+}
+.area-search:focus { border-color: var(--orange); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.chip {
+  font-size: 12px;
+  padding: 6px 12px;
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  background: rgba(8, 15, 33, 0.85);
+  color: #cbd5e1;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+.chip.highlight {
+  border-color: var(--orange);
+  background: rgba(255, 122, 0, 0.2);
+  color: #fff;
+  font-weight: 700;
+}
+.coverage-visual {
+  min-height: 250px;
+  border-radius: 16px;
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  background: radial-gradient(circle at center, rgba(0, 123, 255, 0.22), transparent 68%), #040917;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 24px;
+}
+
+/* Contact & FAQ */
+.contacts { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.contact {
+  padding: 28px;
+  background: rgba(8, 15, 33, 0.88);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 18px;
+}
+.contact p { color: #cbd5e1; font-size: 14px; }
+.contact a:not(.btn), footer a { color: #38bdf8; text-decoration: underline; text-underline-offset: 3px; }
+.contact .btn { margin: 10px 8px 10px 0; }
+
+.faq { max-width: 860px; margin: auto; display: grid; gap: 11px; }
+.faq details { padding: 18px 20px; border: 1px solid rgba(56, 189, 248, 0.18); border-radius: 14px; background: rgba(8, 15, 33, 0.8); }
+.faq summary { font-weight: 700; cursor: pointer; font-size: 15px; }
+.faq details p { color: #94a3b8; font-size: 13.5px; margin-bottom: 0; }
+
+/* Footer */
+.footer { padding: 38px 0 48px; color: #94a3b8; font-size: 12.5px; }
+.foot {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.footer-brand { display: flex; align-items: center; gap: 10px; font-weight: 800; color: #f8fafc; font-size: 16px; }
+.footer-brand span { color: var(--orange); }
+.note { font-size: 11.5px; color: #64748b; margin-top: 15px; }
+
+/* Floating WhatsApp */
+.whatsapp {
+  position: fixed;
+  right: 18px; bottom: 18px;
+  z-index: 45;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 99px;
+  font-size: 13px;
+  font-weight: 800;
+  box-shadow: 0 10px 28px rgba(22, 163, 74, 0.45);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s;
+}
+.whatsapp:hover { transform: scale(1.05); }
+
+/* Quick Order Modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 15, 0.84);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  display: none;
+  place-items: center;
+  padding: 20px;
+}
+.modal-backdrop.open { display: grid; }
+.modal {
+  background: #0a142c;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 440px;
+  padding: 28px;
+  position: relative;
+  box-shadow: 0 25px 65px rgba(0, 0, 0, 0.75);
+  animation: popIn 0.25s ease;
+}
+.modal-close {
+  position: absolute;
+  top: 16px; right: 16px;
+  background: #132547;
+  border: none;
+  color: #fff;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+}
+.modal h3 { margin: 0 0 6px; font-size: 22px; }
+.modal p { margin: 0 0 18px; font-size: 13px; color: #94a3b8; }
+.form-group { margin-bottom: 14px; }
+.form-group label { display: block; font-size: 12px; font-weight: 700; margin-bottom: 5px; color: #cbd5e1; }
+.form-group input, .form-group textarea {
+  width: 100%;
+  background: #040917;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 10px;
+  padding: 10px 13px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+.form-group input:focus, .form-group textarea:focus { border-color: var(--orange); }
+
+/* Animations */
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.in { opacity: 1; transform: none; }
+
+@keyframes pulse { 50% { box-shadow: 0 0 0 10px rgba(255, 122, 0, 0); } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes orbit { to { transform: rotate(334deg); } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+@keyframes breathe { 0%, 100% { transform: scale(1); opacity: 0.8; } 50% { transform: scale(1.12); opacity: 1; } }
+@keyframes popIn { from { opacity: 0; transform: scale(0.92); } to { opacity: 1; transform: scale(1); } }
+
+/* Responsive */
+@media (max-width: 940px) {
+  .hero, .gaming-banner { grid-template-columns: 1fr; text-align: left; }
+  .packages { grid-template-columns: repeat(2, 1fr); }
+  .navlinks { gap: 15px; font-size: 12px; }
+}
+@media (max-width: 720px) {
+  .header-outer { padding: 10px 12px 0; }
+  .header-island { padding: 9px 14px; border-radius: 15px; }
+  .navlinks {
+    display: none;
+    position: absolute;
+    top: 68px; left: 12px; right: 12px;
+    background: rgba(8, 15, 33, 0.97);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-radius: 16px;
+    padding: 18px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+  }
+  .navlinks.open { display: flex; }
+  .navcta { display: none; }
+  .menu { display: block; }
+  .hero { padding: 40px 0 50px; }
+  .visual { height: 330px; }
+  .core { width: 168px; height: 168px; }
+  .orbit { width: 290px; height: 130px; }
+  .orbit.o2 { width: 335px; height: 155px; }
+  .packages, .feature-grid, .service-grid, .contacts, .coverage, .gaming-features { grid-template-columns: 1fr; }
+  .gaming-banner, .coverage { padding: 22px; }
+  .calc-result { width: 100%; }
+}
+</style>
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- SMART AUTO-HIDE FLOATING ISLAND HEADER -->
+<div class="header-outer" id="smartHeader">
+  <header class="header-island">
+    <nav class="nav">
+      <a class="brand" href="#home" aria-label="MR WiFi home">
+        <div class="brand-logo-wrap">
+          <img src="logo.png" alt="MR WiFi Logo" onerror="this.style.display='none';">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;z-index:1;">
+            <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+            <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+            <circle cx="12" cy="20" r="1.5" fill="#ff7a00" stroke="#ff7a00"></circle>
+          </svg>
+        </div>
+        <div class="brand-text">MR <span>WiFi</span></div>
+      </a>
+      <div class="navlinks" id="navlinks">
+        <a href="#home">Home</a>
+        <a href="#packages">Packages</a>
+        <a href="#gaming">Gaming Zone</a>
+        <a href="#network">CCTV & LAN</a>
+        <a href="#coverage">Coverage</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a class="btn orange navcta" href="#packages">Get Connected ↗</a>
+      <button class="menu" id="menu" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </nav>
+  </header>
+</div>
+
+<main id="home">
+  <!-- HERO SECTION -->
+  <div class="hero-wrapper">
+    <canvas id="fiberCanvas"></canvas>
+    <section class="wrap hero">
+      <div>
+        <span class="kicker"><i class="pulse"></i> NEXT-GEN FIBER & GAMING NETWORK</span>
+        <h1>Move at the<br><span class="gradient">speed of now.</span></h1>
+        <p class="hero-copy">Experience buffer-free 4K streaming, <b>ultra-low latency gaming</b>, and rock-solid optical fiber internet across Dhaka with dedicated local engineering support.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#packages">Explore Smart Plans <span>→</span></a>
+          <a class="btn orange" href="#gaming">🎮 Gaming Latency</a>
+        </div>
+        <div class="metrics-strip">
+          <div class="metric-item">
+            <strong>2 ms</strong>
+            <span>BDIX Gaming Ping</span>
+          </div>
+          <div class="metric-item">
+            <strong>99.9%</strong>
+            <span>Fiber Uptime SLA</span>
+          </div>
+          <div class="metric-item">
+            <strong>Same Day</strong>
+            <span>Express Setup</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="visual" aria-label="MR WiFi Interactive Core">
+        <div class="orbit"></div>
+        <div class="orbit o2"></div>
+        <div class="floating-badge fb1"><i class="fb-dot"></i> BDIX Ping: 2ms</div>
+        <div class="floating-badge fb2"><i class="fb-dot"></i> 99.9% Fiber Uptime</div>
+        <div class="core">
+          <img src="logo.png" alt="MR WiFi — Stay Connected, Stay Ahead!" onerror="this.style.display='none';">
+          <div style="text-align:center;position:relative;z-index:1;">
+            <div style="font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:26px;color:#030712;line-height:1;">MR <span style="color:#ff7a00;">WiFi</span></div>
+            <div style="font-size:10px;font-weight:800;letter-spacing:2px;color:#007bff;margin-top:4px;">ULTRA FIBER</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- PACKAGES SECTION -->
+  <section class="section" id="packages">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker orange">TAILORED SPEED TIERS</span>
+        <h2>Plans engineered for <span class="gradient">every lifestyle.</span></h2>
+        <p>Choose from our signature high-speed packages or use the smart finder below to match your exact needs.</p>
+      </div>
+
+      <!-- Smart Speed Finder -->
+      <div class="calculator-box reveal">
+        <div class="calc-controls">
+          <div class="calc-item">
+            <label for="calcDevices">Connected Devices</label>
+            <select id="calcDevices">
+              <option value="1">1 – 4 Devices (Mobile/Laptop)</option>
+              <option value="2" selected>5 – 10 Devices (Smart Home)</option>
+              <option value="3">10 – 20 Devices (Heavy Family)</option>
+              <option value="4">20+ Devices (Office / Studio)</option>
+            </select>
+          </div>
+          <div class="calc-item">
+            <label for="calcUsage">Primary Activity</label>
+            <select id="calcUsage">
+              <option value="1">Browsing & Social Media</option>
+              <option value="2" selected>4K Streaming & WFH</option>
+              <option value="3">Competitive Gaming & Live Stream</option>
+              <option value="4">4K Creators & Heavy Cloud</option>
+            </select>
+          </div>
+        </div>
+        <div class="calc-result" id="calcResult">
+          <div>
+            <span>Recommended Plan</span>
+            <strong id="recPlanName">Gamer X — 100 Mbps (৳1,000/mo)</strong>
+          </div>
+          <button class="btn orange" id="recOrderBtn" style="padding: 10px 16px; font-size: 13px;">Select →</button>
+        </div>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs reveal">
+        <button class="tab-btn active" data-filter="all">All Plans (13)</button>
+        <button class="tab-btn" data-filter="home">Home & Family</button>
+        <button class="tab-btn" data-filter="gamer">Gamer & Pro</button>
+        <button class="tab-btn" data-filter="ultra">Ultra & Corporate</button>
+      </div>
+
+      <div class="packages" id="packageGrid"></div>
+      <p class="disclaimer">* All prices are monthly. Contact us to confirm exact building fiber feasibility and installation details.</p>
+    </div>
+  </section>
+
+  <!-- DEDICATED GAMING & LOW LATENCY SECTION -->
+  <section class="section" id="gaming">
+    <div class="wrap">
+      <div class="gaming-banner reveal">
+        <div>
+          <span class="kicker orange">🎮 PRO GAMING ROUTING</span>
+          <h2 style="font-size: clamp(28px, 4vw, 42px); line-height: 1.12; letter-spacing: -1.5px; margin: 14px 0;">
+            Zero Lag. <span class="gradient">Ultra-Low Latency.</span>
+          </h2>
+          <p style="color: #cbd5e1; font-size: 15px; margin: 0;">
+            Engineered with direct peering to major gaming hubs in Singapore, Mumbai, and Middle East servers. Say goodbye to packet loss and jitter during ranked matches.
+          </p>
+          <div class="gaming-features">
+            <div class="g-feat">⚡ Direct SG & ME Routes<span>Optimized routing for Valorant, PUBG & COD</span></div>
+            <div class="g-feat">🛡️ Zero Packet Loss<span>Dual-backbone redundancy for stable ping</span></div>
+            <div class="g-feat">🌐 Real Public IP Option<span>Smooth NAT Type Open for console & PC</span></div>
+            <div class="g-feat">🚀 24/7 BDIX & Steam Cache<span>Blazing fast game updates & downloads</span></div>
+          </div>
+          <button class="btn orange open-modal" data-item="Gaming Fiber Connection Enquiry">Get Gaming Line ↗</button>
+        </div>
+
+        <div class="ping-card">
+          <div class="ping-header">
+            <span>LIVE SERVER LATENCY MONITOR</span>
+            <span class="live-pill">● OPTIMAL</span>
+          </div>
+          <div class="ping-row">
+            <div class="ping-meta"><span>BDIX Local Gaming & Cache</span><b>2 ms</b></div>
+            <div class="ping-bar"><div class="ping-fill" style="width: 96%;"></div></div>
+          </div>
+          <div class="ping-row orange">
+            <div class="ping-meta"><span>Singapore (Valorant / Dota 2 / MLBB)</span><b>32 ms</b></div>
+            <div class="ping-bar"><div class="ping-fill" style="width: 88%;"></div></div>
+          </div>
+          <div class="ping-row">
+            <div class="ping-meta"><span>Mumbai (BGMI / CS2 / Steam)</span><b>38 ms</b></div>
+            <div class="ping-bar"><div class="ping-fill" style="width: 84%;"></div></div>
+          </div>
+          <div class="ping-row orange">
+            <div class="ping-meta"><span>Bahrain / UAE (Fortnite / Apex)</span><b>58 ms</b></div>
+            <div class="ping-bar"><div class="ping-fill" style="width: 76%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY MR WIFI -->
+  <section class="section" id="why">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">THE MR WIFI DIFFERENCE</span>
+        <h2>More than speed. <span class="gradient">A better connection.</span></h2>
+        <p>Built on modern GPON fiber infrastructure to keep your home, gaming, and business running seamlessly.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature reveal">
+          <div class="feature-icon">⚡</div>
+          <h3>Pure FTTH Fiber</h3>
+          <p>End-to-end optical fiber straight to your router for consistent upload and download speeds day and night.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-icon">🎧</div>
+          <h3>Rapid Local Support</h3>
+          <p>Direct phone and WhatsApp assistance from our Dhaka technical team for instant troubleshooting.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-icon">🛡️</div>
+          <h3>Enterprise Reliability</h3>
+          <p>Redundant upstream links ensure uninterrupted connectivity for remote work, meetings, and offices.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- NETWORK SOLUTIONS -->
+  <section class="section" id="network">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker orange">NETWORK SOLUTIONS</span>
+        <h2>Secure spaces. <span class="gradient">Smarter networks.</span></h2>
+        <p>Complete CCTV surveillance, structured LAN cabling, and IT infrastructure services for homes and offices.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service reveal">
+          <div class="feature-icon">📹</div>
+          <h3>CC Camera & CCTV Solutions</h3>
+          <p>End-to-end security camera planning, installation, and mobile remote viewing setup.</p>
+          <ul>
+            <li>IP, HD & Night-Vision camera installation</li>
+            <li>DVR / NVR configuration & storage setup</li>
+            <li>Live mobile app monitoring from anywhere</li>
+            <li>Camera troubleshooting & maintenance</li>
+          </ul>
+          <button class="btn orange open-modal" data-item="CC Camera & CCTV Quotation">Request CCTV Quote ↗</button>
+        </article>
+
+        <article class="service reveal">
+          <div class="feature-icon">🔌</div>
+          <h3>Structured LAN Networking</h3>
+          <p>Clean, high-speed wired networking for corporate offices, apartments, and commercial spaces.</p>
+          <ul>
+            <li>Cat6 / Fiber structured cabling & termination</li>
+            <li>Managed switch, router & access point setup</li>
+            <li>Server rack, patch panel & cable dressing</li>
+            <li>Office network optimization & fault diagnosis</li>
+          </ul>
+          <button class="btn orange open-modal" data-item="LAN Networking Quotation">Request LAN Quote ↗</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COVERAGE AREA -->
+  <section class="section" id="coverage">
+    <div class="wrap">
+      <div class="coverage reveal">
+        <div>
+          <span class="kicker">COVERAGE ZONES</span>
+          <h2>Is your area <span class="gradient">connected?</span></h2>
+          <p>Type your area name below to quickly check our active fiber zones across Dhaka.</p>
+          <input type="text" id="areaSearch" class="area-search" placeholder="🔍 Search area (e.g., Banani, Gulshan, Uttara)...">
+          <div class="chips" id="areaChips">
+            <span class="chip">New D.O.H.S Mohakhali</span>
+            <span class="chip">Mohakhali D.O.H.S</span>
+            <span class="chip">SKS Tower</span>
+            <span class="chip">Banani Old D.O.H.S</span>
+            <span class="chip">Banani</span>
+            <span class="chip">Baridhara Diplomatic</span>
+            <span class="chip">Gulshan 1 & 2</span>
+            <span class="chip">Badda Link Road</span>
+            <span class="chip">Niketon</span>
+            <span class="chip">Bashundhara</span>
+            <span class="chip">Swadesh City</span>
+            <span class="chip">Uttara</span>
+            <span class="chip">Uttara Sector 18</span>
+            <span class="chip">Nikunjo</span>
+          </div>
+        </div>
+        <div class="coverage-visual">
+          <div>
+            <div style="font-size: 40px; margin-bottom: 8px;">📍</div>
+            <strong style="font-size: 20px; display: block; margin-bottom: 6px;">Verify Your Building</strong>
+            <p style="font-size: 13px; margin-bottom: 16px;">Share your road & house number for instant fiber port confirmation.</p>
+            <button class="btn outline open-modal" data-item="Address Coverage Check">Check My Building →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">QUICK ANSWERS</span>
+        <h2>Frequently asked <span class="gradient">questions.</span></h2>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>How fast can I get a new MR WiFi connection?</summary>
+          <p>In our active fiber coverage zones (Mohakhali D.O.H.S, Banani, Gulshan, Uttara, Bashundhara, etc.), connections are typically installed on the very same day.</p>
+        </details>
+        <details>
+          <summary>Which plan is best for online gaming?</summary>
+          <p>Our <b>Gamer X (100 Mbps)</b> and <b>Nitro Boost (130 Mbps)</b> plans are specially popular among gamers for ultra-low ping, zero packet loss, and fast game downloads.</p>
+        </details>
+        <details>
+          <summary>Do you provide corporate LAN and CCTV setup?</summary>
+          <p>Yes! Our Network Solutions team handles complete CCTV camera installation, DVR/NVR setup, Cat6 cabling, and router/Wi-Fi mesh configuration.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker orange">LET’S CONNECT</span>
+        <h2>We’re one call or message <span class="gradient">away.</span></h2>
+        <p>Reach out for new internet connections, gaming lines, CCTV installation, or technical support.</p>
+      </div>
+      <div class="contacts">
+        <article class="contact reveal">
+          <span class="kicker">CUSTOMER SUPPORT & SALES</span>
+          <h3>New Connection & Hotline</h3>
+          <p>Call us directly for instant package consultation, billing, or technical assistance.</p>
+          <a class="btn" href="tel:+8801410024365">📞 Call: 01410024365</a>
+          <a class="btn mint" href="https://wa.me/8801704703138?text=Hello%20MR%20WiFi%2C%20I%20want%20to%20know%20about%20internet%20packages." target="_blank" rel="noopener">💬 WhatsApp: 01704703138</a>
+          <p style="margin-top: 14px;"><b>Email:</b> <a href="mailto:support@mrwifi.online">support@mrwifi.online</a></p>
+        </article>
+
+        <article class="contact reveal">
+          <span class="kicker orange">HEAD OFFICE & PROJECTS</span>
+          <h3>Visit Us or Request Quotation</h3>
+          <p><b>Office Address:</b><br>House: 331, Road: 22, New D.O.H.S Mohakhali,<br>Dhaka-1212, Bangladesh</p>
+          <p><b>Direct Phone:</b> <a href="tel:+8801410024365">01410024365</a><br>
+             <b>WhatsApp Support:</b> <a href="https://wa.me/8801704703138" target="_blank" rel="noopener">01704703138</a></p>
+          <button class="btn orange open-modal" data-item="Corporate / Network Project Enquiry">Request Quotation ↗</button>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot">
+      <div class="footer-brand">
+        <div class="brand-logo-wrap" style="width: 34px; height: 34px; border-radius: 10px;">
+          <img src="logo.png" alt="MR WiFi" onerror="this.style.display='none'">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;z-index:1;">
+            <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+            <circle cx="12" cy="20" r="1.5" fill="#ff7a00" stroke="#ff7a00"></circle>
+          </svg>
+        </div>
+        <div>MR <span>WiFi</span> · Stay Connected, Stay Ahead!</div>
+      </div>
+      <span>© <span id="year"></span> MR WiFi. All rights reserved.</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+    <p class="note">Office: House: 331, Road: 22, New D.O.H.S Mohakhali, Dhaka-1212 | Phone: 01410024365 | WhatsApp: 01704703138</p>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/8801704703138?text=Hello%20MR%20WiFi%2C%20I%20need%20information." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  💬 WhatsApp Us
+</a>
+
+<!-- QUICK ORDER MODAL -->
+<div class="modal-backdrop" id="orderModal">
+  <div class="modal">
+    <button class="modal-close" id="closeModal" aria-label="Close modal">×</button>
+    <span class="kicker orange" style="margin-bottom: 10px;">INSTANT REQUEST</span>
+    <h3 id="modalTitle">Select Package</h3>
+    <p>Fill in your details below to send an instant request directly to our WhatsApp team.</p>
+    <form id="orderForm">
+      <div class="form-group">
+        <label>Selected Plan / Service</label>
+        <input type="text" id="selectedItemInput" readonly style="color: #38bdf8; font-weight: 800;">
+      </div>
+      <div class="form-group">
+        <label>Your Name *</label>
+        <input type="text" id="custName" required placeholder="Enter your full name">
+      </div>
+      <div class="form-group">
+        <label>Phone Number *</label>
+        <input type="tel" id="custPhone" required placeholder="e.g., 017XXXXXXXX">
+      </div>
+      <div class="form-group">
+        <label>Full Address (House, Road, Area) *</label>
+        <textarea id="custAddress" rows="2" required placeholder="e.g., House 12, Road 5, Banani"></textarea>
+      </div>
+      <button type="submit" class="btn orange" style="width: 100%;">Send via WhatsApp ↗</button>
+    </form>
+  </div>
+</div>
+
+<script>
+// 1. Smart Auto-Hide Header & Scroll Progress Bar
+const smartHeader = document.getElementById('smartHeader');
+const scrollProgress = document.getElementById('scrollProgress');
+const navLinksEl = document.getElementById('navlinks');
+let lastScrollY = window.scrollY;
+
+window.addEventListener('scroll', () => {
+  const currentScrollY = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  if (docHeight > 0) {
+    scrollProgress.style.width = `${(currentScrollY / docHeight) * 100}%`;
+  }
+
+  if (currentScrollY > 40) {
+    smartHeader.classList.add('scrolled');
+  } else {
+    smartHeader.classList.remove('scrolled');
+  }
+
+  // Hide header when scrolling down past 140px (unless mobile menu is open), reveal immediately on scroll up
+  if (!navLinksEl.classList.contains('open')) {
+    if (currentScrollY > lastScrollY && currentScrollY > 140) {
+      smartHeader.classList.add('nav-hidden');
+    } else {
+      smartHeader.classList.remove('nav-hidden');
+    }
+  }
+  lastScrollY = currentScrollY;
+}, { passive: true });
+
+// 2. Package Data
+const plans = [
+  { name: "Spark Lite", speed: "30", price: 500, cat: "home", desc: "Ideal for smooth browsing, social media & HD video." },
+  { name: "Swift Home", speed: "35", price: 600, cat: "home", desc: "Great for small families & everyday online classes." },
+  { name: "Pulse Plus", speed: "50", price: 700, cat: "home", desc: "Buffer-free Full HD streaming & multi-device Wi-Fi." },
+  { name: "Velocity 70", speed: "70", price: 800, cat: "home", desc: "Fast downloads, WFH video calls & smart TVs." },
+  { name: "Gamer X", speed: "100", price: 1000, cat: "gamer", badge: "MOST POPULAR", popular: true, desc: "Ultra-low latency gaming route + 4K streaming." },
+  { name: "Nitro Boost", speed: "130", price: 1200, cat: "gamer", badge: "PRO GAMING", desc: "Priority gaming packets & high-speed cloud sync." },
+  { name: "Stream Pro", speed: "170", price: 1500, cat: "gamer", desc: "Built for live streamers, creators & heavy households." },
+  { name: "Apex 250", speed: "250", price: 2000, cat: "gamer", desc: "Extreme multi-user bandwidth with zero throttling." },
+  { name: "Titan 320", speed: "320", price: 2500, cat: "ultra", desc: "Powerhouse speed for large residences & studios." },
+  { name: "Quantum 400", speed: "400", price: 3000, cat: "ultra", desc: "Dedicated high-throughput fiber for heavy workloads." },
+  { name: "Hyper 550", speed: "550", price: 4000, cat: "ultra", desc: "Next-level fiber performance for small offices." },
+  { name: "Sonic 650", speed: "650", price: 4500, cat: "ultra", desc: "Enterprise-grade speed & instant large file transfers." },
+  { name: "Infinity 800", speed: "800", price: 5200, cat: "ultra", desc: "Our flagship ultra-speed tier for peak performance." }
+];
+
+const grid = document.getElementById('packageGrid');
+
+function renderPackages(filter = 'all') {
+  const filtered = filter === 'all' ? plans : plans.filter(p => p.cat === filter);
+  grid.innerHTML = filtered.map(p => {
+    const isGamer = p.cat === 'gamer' || p.cat === 'ultra';
+    return `
+      <article class="pkg ${p.popular ? 'popular' : ''} ${p.cat === 'gamer' ? 'gamer' : ''}">
+        ${p.badge ? `<span class="${p.popular ? 'popular-tag' : 'gamer-tag'}">${p.badge}</span>` : ''}
+        <div class="plan-name">${p.name}</div>
+        <div class="speed">${p.speed} <small>Mbps</small></div>
+        <div class="price">৳${p.price.toLocaleString('en-BD')} <small>/ month</small></div>
+        <ul class="pkg-specs">
+          <li>${p.desc}</li>
+          <li>${isGamer ? 'Ultra-Low Ping Gaming Route' : '24/7 BDIX & YouTube Cache'}</li>
+          <li>Optical Fiber (FTTH) Connection</li>
+        </ul>
+        <button class="btn ${p.popular ? 'orange' : 'outline'} open-modal" data-item="${p.name} (${p.speed} Mbps — ৳${p.price}/mo)">
+          Choose ${p.name} →
+        </button>
+      </article>
+    `;
+  }).join('');
+  attachModalTriggers();
+  attachSpotlightEffect();
+}
+
+renderPackages();
+
+// 3. Category Filter Tabs
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderPackages(btn.dataset.filter);
+  });
+});
+
+// 4. Smart Speed Finder Calculator
+const calcDevices = document.getElementById('calcDevices');
+const calcUsage = document.getElementById('calcUsage');
+const recPlanName = document.getElementById('recPlanName');
+const recOrderBtn = document.getElementById('recOrderBtn');
+
+function updateRecommendation() {
+  const score = Number(calcDevices.value) + Number(calcUsage.value);
+  let rec = plans[4];
+  if (score <= 3) rec = plans[2];
+  else if (score === 4) rec = plans[4];
+  else if (score === 5) rec = plans[5];
+  else if (score === 6) rec = plans[7];
+  else if (score === 7) rec = plans[9];
+  else rec = plans[11];
+
+  const label = `${rec.name} — ${rec.speed} Mbps (৳${rec.price.toLocaleString('en-BD')}/mo)`;
+  recPlanName.textContent = label;
+  recOrderBtn.dataset.item = label;
+}
+calcDevices.addEventListener('change', updateRecommendation);
+calcUsage.addEventListener('change', updateRecommendation);
+updateRecommendation();
+
+// 5. Spotlight Mouse Hover Effect
+function attachSpotlightEffect() {
+  document.querySelectorAll('.pkg').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const rect = card.getBoundingClientRect();
+      card.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`);
+      card.style.setProperty('--mouse-y', `${e.clientY - rect.top}px`);
+    });
+  });
+}
+
+// 6. Quick Order Modal Logic
+const modal = document.getElementById('orderModal');
+const closeModal = document.getElementById('closeModal');
+const selectedItemInput = document.getElementById('selectedItemInput');
+const modalTitle = document.getElementById('modalTitle');
+
+function openOrderModal(itemText) {
+  selectedItemInput.value = itemText;
+  modalTitle.textContent = itemText.split('(')[0].trim();
+  modal.classList.add('open');
+}
+
+function attachModalTriggers() {
+  document.querySelectorAll('.open-modal').forEach(btn => {
+    btn.addEventListener('click', () => openOrderModal(btn.dataset.item));
+  });
+}
+recOrderBtn.addEventListener('click', () => openOrderModal(recOrderBtn.dataset.item));
+closeModal.addEventListener('click', () => modal.classList.remove('open'));
+modal.addEventListener('click', e => { if (e.target === modal) modal.classList.remove('open'); });
+
+document.getElementById('orderForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const item = selectedItemInput.value;
+  const name = document.getElementById('custName').value.trim();
+  const phone = document.getElementById('custPhone').value.trim();
+  const address = document.getElementById('custAddress').value.trim();
+
+  const message = `Hello MR WiFi,\nI would like to request:\n*Plan/Service:* ${item}\n*Name:* ${name}\n*Phone:* ${phone}\n*Address:* ${address}`;
+  window.open(`https://wa.me/8801704703138?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
+  modal.classList.remove('open');
+});
+
+// 7. Live Area Coverage Search
+const areaSearch = document.getElementById('areaSearch');
+const chips = document.querySelectorAll('#areaChips .chip');
+areaSearch.addEventListener('input', () => {
+  const q = areaSearch.value.trim().toLowerCase();
+  chips.forEach(chip => {
+    const text = chip.textContent.toLowerCase();
+    if (!q) {
+      chip.style.display = 'inline-block';
+      chip.classList.remove('highlight');
+    } else if (text.includes(q)) {
+      chip.style.display = 'inline-block';
+      chip.classList.add('highlight');
+    } else {
+      chip.style.display = 'none';
+    }
+  });
+});
+
+// 8. Mobile Navigation & Year
+document.getElementById('year').textContent = new Date().getFullYear();
+const menu = document.getElementById('menu');
+menu.addEventListener('click', () => {
+  const open = navLinksEl.classList.toggle('open');
+  menu.setAttribute('aria-expanded', String(open));
+  menu.textContent = open ? '×' : '☰';
+});
+navLinksEl.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  navLinksEl.classList.remove('open');
+  menu.setAttribute('aria-expanded', 'false');
+  menu.textContent = '☰';
+}));
+
+// 9. Scroll Reveal Animation
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+} else {
+  document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+}
+
+// 10. Interactive Fiber Particle Network Canvas
+const canvas = document.getElementById('fiberCanvas');
+const ctx = canvas.getContext('2d');
+let particles = [];
+let mouse = { x: null, y: null };
+
+function resizeCanvas() {
+  canvas.width = canvas.offsetWidth;
+  canvas.height = canvas.offsetHeight;
+}
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas();
+
+window.addEventListener('mousemove', e => {
+  const rect = canvas.getBoundingClientRect();
+  mouse.x = e.clientX - rect.left;
+  mouse.y = e.clientY - rect.top;
+});
+
+class Particle {
+  constructor() {
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+    this.vx = (Math.random() - 0.5) * 0.65;
+    this.vy = (Math.random() - 0.5) * 0.65;
+    this.size = Math.random() * 2 + 1;
+    this.color = Math.random() > 0.25 ? '#38bdf8' : '#ff7a00';
+  }
+  update() {
+    this.x += this.vx;
+    this.y += this.vy;
+    if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+    if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+  }
+  draw() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fillStyle = this.color;
+    ctx.fill();
+  }
+}
+
+for (let i = 0; i < 55; i++) particles.push(new Particle());
+
+function animateCanvas() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (let i = 0; i < particles.length; i++) {
+    particles[i].update();
+    particles[i].draw();
+    for (let j = i; j < particles.length; j++) {
+      const dx = particles[i].x - particles[j].x;
+      const dy = particles[i].y - particles[j].y;
+      const dist = Math.hypot(dx, dy);
+      if (dist < 130) {
+        ctx.beginPath();
+        ctx.strokeStyle = `rgba(56, 189, 248, ${0.18 * (1 - dist / 130)})`;
+        ctx.lineWidth = 0.8;
+        ctx.moveTo(particles[i].x, particles[i].y);
+        ctx.lineTo(particles[j].x, particles[j].y);
+        ctx.stroke();
+      }
+    }
+    if (mouse.x !== null) {
+      const mdx = particles[i].x - mouse.x;
+      const mdy = particles[i].y - mouse.y;
+      const mdist = Math.hypot(mdx, mdy);
+      if (mdist < 150) {
+        ctx.beginPath();
+        ctx.strokeStyle = `rgba(255, 122, 0, ${0.35 * (1 - mdist / 150)})`;
+        ctx.lineWidth = 1;
+        ctx.moveTo(particles[i].x, particles[i].y);
+        ctx.lineTo(mouse.x, mouse.y);
+        ctx.stroke();
+      }
+    }
+  }
+  requestAnimationFrame(animateCanvas);
+}
+animateCanvas();
+</script>
+</body>
+</html>
